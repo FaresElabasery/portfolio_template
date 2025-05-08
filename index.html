@@ -32,32 +32,63 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center ms-md-auto mb-2 mb-lg-0">
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0 active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0 active" aria-current="page"
+                                href="#home">Home</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">About</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#about">About</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">Services</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#services">Services</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">Works</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#works">Works</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">Clients</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#clients">Clients</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">Team</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#team">Team</a>
                         </li>
                         <li class="nav-item m-auto me-md-4 ">
-                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#">Contact</a>
+                            <a class="nav-link mt-4 mt-md-0 me-md-3 p-0" href="#contact">Contact</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
+        <header id="home" class="d-flex justify-content-center align-items-center flex-column text-light">
+            <h2 class="fw-bolder display-4">Hello</h2>
+            <h1 class="text-capitalize h2 fw-light display-4 mt-3">I Am <span class="fw-medium" id="typingAnimation"></span> </h1>
+            <ul class="list-unstyled d-flex flex-wrap column-gap-3 mt-3">
+                <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
+                    <li><i class="fa-brands fa-fw fa-facebook-f"></i></li>
+                </a>
+                <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
+                    <li><i class="fa-brands fa-fw fa-twitter"></i></li>
+                </a>
+                <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
+                    <li><i class="fa-brands fa-fw fa-linkedin-in"></i></li>
+                </a>
+                <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
+                    <li><i class="fa-brands fa-fw fa-behance"></i></li>
+                </a>
+                <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
+                    <li><i class="fa-brands fa-fw fa-youtube"></i></li>
+                </a>
+            </ul>
+
+        </header>
     </main>
+    <!-- typing library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typingAnimation', {
+            strings: ['Daniels Developer', 'Developer', 'Designer'],
+            typeSpeed: 50,
+            loop:true,
+        });
+    </script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
