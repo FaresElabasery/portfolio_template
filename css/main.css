@@ -1,22 +1,52 @@
 :root {
     --section-bg-color: #F7F7F7;
     --font-color: #343434;
-    --navbar-bg-color: #F7F7F7;
-}
-
-section {
-    --navbar-bg-color: #F7F7F7;
+    --bg-icons: #1C1C1C;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 .9375rem;
 }
-a{
+
+.bg-color {
+    background-color: var(--section-bg-color);
+}
+
+.letter-spacing {
+    letter-spacing: 0.1rem;
+}
+
+.small-text {
+    font-size: .875rem;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: var(--bg-icons);
+}
+
+.custom-btn:hover {
+    background-color: white;
+    color: var(--bg-icons);
+    border: 1px solid var(--bg-icons);
+}
+
+.fw-bolder {
+    font-weight: 800 !important;
+}
+
+section {
+    margin-block: 5rem;
+    padding-block: 3.125rem;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
+
 .navbar-brand,
 h1,
 h2,
@@ -32,19 +62,37 @@ body {
     color: var(--font-color);
 }
 
+.heading h2 {
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
 
-
+.heading h2::after {
+    content: "";
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 83%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: -1;
+}
 
 
 /* navbar */
 
+#portfolio .nav.nav-pills li button,
 nav .nav-item a {
     position: relative;
     width: fit-content;
-    font-size: 14px;
+    font-size: .875rem;
     color: #000;
+    background-color: transparent !important;
 }
 
+#portfolio .nav.nav-pills li button::after,
 nav .nav-item a::after {
     padding: 0 0 0 0;
     position: absolute;
@@ -59,7 +107,8 @@ nav .nav-item a::after {
 }
 
 nav .nav-item .active::after,
-nav .nav-item:hover a::after {
+nav .nav-item:hover a::after,
+#portfolio .nav.nav-pills li button.active::after {
     width: 100%;
 }
 
@@ -80,11 +129,116 @@ header {
 }
 
 header li {
-    width: 35px;
-    height: 35px;
+    width: 2.1875rem;
+    height: 2.1875rem;
     background-color: #000b12;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* about section */
+.about .img-container {
+    position: relative;
+}
+
+.about .img-container::after {
+    position: absolute;
+    content: "";
+    background-image: url(/imgs/dots.png);
+    background-repeat: repeat;
+    width: 81%;
+    height: 73%;
+    z-index: -1;
+    right: 22%;
+    top: 31%;
+}
+
+.progress,
+.progress-stacked {
+    height: 1.5625rem;
+    background-color: #F7F7F7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* servies section */
+.services .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.services .icon-container {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.services .card:hover .icon-container {
+    color: white;
+    background-color: var(--bg-icons);
+}
+
+/* portfolio section */
+.overlay {
+    inset: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(5%);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.img-container:hover .overlay {
+    inset: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.first-row {
+    transform: translateY(-110%);
+    transition: all .3s ease-in-out;
+}
+
+.second-row {
+    transform: translateY(-10%);
+    transition: all .3s ease-in-out;
+}
+
+.img-container:hover .first-row,
+.img-container:hover .second-row {
+    transform: translateY(0);
+}
+
+.portfolio .img-container ul li {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--bg-icons);
+    border-radius: 50%;
+    background-color: var(--bg-icons);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio ul li:hover {
+    background-color: white;
+    color: var(--bg-icons);
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+#portfolio .nav.nav-pills li button::after {
+    height: 3px;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +21,10 @@
 </head>
 
 <body>
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar">
         <nav class="navbar navbar-expand-lg py-2 bg-white shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand  fs-5 fw-bolder text-uppercase " href="#">Daniels</a>
+                <a class="navbar-brand fs-5 fw-bolder text-uppercase letter-spacing " href="#">Daniels</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,8 @@
         </nav>
         <header id="home" class="d-flex justify-content-center align-items-center flex-column text-light">
             <h2 class="fw-bolder display-4">Hello</h2>
-            <h1 class="text-capitalize h2 fw-light display-4 mt-3">I Am <span class="fw-medium" id="typingAnimation"></span> </h1>
+            <h1 class="text-capitalize h2 fw-light display-4 mt-3">I Am <span class="fw-medium"
+                    id="typingAnimation"></span> </h1>
             <ul class="list-unstyled d-flex flex-wrap column-gap-3 mt-3">
                 <a href="https://www.facebook.com/fares.elabasery.9" target="_blank">
                     <li><i class="fa-brands fa-fw fa-facebook-f"></i></li>
@@ -79,14 +81,640 @@
             </ul>
 
         </header>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="img-container px-3">
+                            <img src="imgs/hero.jpg" alt="my image" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="content mt-3 mt-md-0 ">
+                            <h2 class="fw-bolder m-0">About Me.</h2>
+                            <span class="letter-spacing text-secondary tr text-uppercase">UI / UX Designer & Web
+                                Developer</span>
+                            <p class="fs-6  fw-normal text-secondary mt-3">I am <span class="fw-bold">Jerry
+                                    Daniels</span> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived
+                                not only five centuries, but also the leap into electronic but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing
+                            </p>
+
+                            <div class="progress mt-4" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-black flex-row align-items-center justify-content-between px-3"
+                                    style="width: 95%">
+                                    <span>Web Design</span><span>95%</span>
+                                </div>
+                            </div>
+                            <div class="progress mt-4" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-black flex-row align-items-center justify-content-between px-3"
+                                    style="width: 80%">
+                                    <span>Branding</span><span>80%</span>
+                                </div>
+                            </div>
+                            <div class="progress mt-4" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-black flex-row align-items-center justify-content-between px-3"
+                                    style="width: 90%">
+                                    <span>Development</span><span>90%</span>
+                                </div>
+                            </div>
+                            <div class="about-me-btn  mt- pt-5">
+                                <a class="btn btn-dark small-text py-2 px-4" href="assets/MY_cv.pdf" download>Download
+                                    C.V</a>
+                                <a href="mailto:faresbat99@gmail.com"
+                                    class="btn btn-outline-dark py-2 small-text px-4">Contact Me</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services bg-color">
+            <div class="heading mb-5">
+                <h2 class="text-center m-auto fs-1 fw-bolder">Services.</h2>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-solid fa-laptop fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Web Design</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-solid fa-bullhorn fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Branding</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-solid fa-umbrella fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Web Design</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-regular fa-gem  fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Web Design</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-solid fa-tv fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Web Design</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 py-3">
+                            <div class="card-body p-4 text-center">
+                                <span class="icon-container m-auto my-3">
+                                    <i class="fa-solid fa-camera  fs-4"></i>
+                                </span>
+                                <h3 class="h5 fw-bolder">Web Design</h3>
+                                <p class="lead text-secondary small-text fw-normal">Lorem Ipsum is simply dummy text of
+                                    the Lorem Ipsum has been the industry's standard
+                                    dummy text ever
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="heading mb-5">
+                <h2 class="text-center m-auto fs-1 fw-bolder">Portfolio.</h2>
+            </div>
+
+            <div class="container">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold p-0 pb-1 fs-6 me-4 active" id="pills-all-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab"
+                            aria-controls="pills-all" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold p-0 pb-1 fs-6 me-4" id="pills-brand-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-brand" type="button" role="tab" aria-controls="pills-brand"
+                            aria-selected="false">Brand</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold p-0 pb-1 fs-6 me-4" id="pills-design-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design"
+                            aria-selected="false">Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold p-0 pb-1 fs-6 me-4" id="pills-graphic-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-graphic"
+                            aria-selected="false">Graphic</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                        aria-labelledby="pills-all-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/1.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic1"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/1.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/2.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic2"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/2.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/3.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic0003"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic0003" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/3.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/4.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic4"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/4.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/5.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic5"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/5.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/6.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic6"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/6.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-brand" role="tabpanel" aria-labelledby="pills-brand-tab"
+                        tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/3.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic03"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic03" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/3.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/6.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic06"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic06" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/6.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab"
+                        tabindex="0">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/2.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic002"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic002" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/2.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/5.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic0005"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic0005" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/5.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab"
+                        tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/1.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic00001"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic00001" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/1.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/3.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic00003"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic00003" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/3.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="img-container position-relative">
+                                    <img src="imgs/portfolio/5.jpg" alt="services image" class="img-fluid">
+                                    <div
+                                        class="overlay position-absolute d-flex align-items-center justify-content-center flex-column">
+                                        <h6 class="text-uppercase first-row letter-spacing fw-bolder small-text">Web
+                                            Design</h6>
+                                        <ul class="list-unstyled second-row d-flex column-gap-2">
+                                            <a href="https://github.com/FaresElabasery" target="_blank">
+                                                <li><i class="fa-solid fa-link fa-2xs"></i></li>
+                                            </a>
+                                            <li data-bs-toggle="modal" data-bs-target="#pic00005"><i
+                                                    class="fa-solid fa-magnifying-glass-plus fa-2xs"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pic00005" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header border-0 p-0 me-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/portfolio/5.jpg" alt="services img" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <!-- typing library -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#typingAnimation', {
             strings: ['Daniels Developer', 'Developer', 'Designer'],
             typeSpeed: 50,
-            loop:true,
+            loop: true,
         });
     </script>
     <!-- bootstrap js -->
