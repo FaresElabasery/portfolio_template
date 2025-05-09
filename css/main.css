@@ -28,12 +28,6 @@
     color: var(--bg-icons);
 }
 
-.custom-btn:hover {
-    background-color: white;
-    color: var(--bg-icons);
-    border: 1px solid var(--bg-icons);
-}
-
 .fw-bolder {
     font-weight: 800 !important;
 }
@@ -302,4 +296,45 @@ header li {
 #team ul li:hover {
     background-color: white;
     color: var(--bg-icons);
+}
+
+/* contact section */
+#contact .contact-info span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all .3s ease-in-out;
+}
+
+#contact .contact-info:hover span {
+    background-color: var(--bg-icons);
+    color: white;
+}
+
+#contact .container {
+    max-width: 997px;
+}
+.form-control {
+    color:#343434;
+    background-color: var(--section-bg-color);
+    border-color: transparent;
+    outline: 0;
+    box-shadow:none;
+    font-size: 14px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--section-bg-color);
+    border-color: transparent;
+    outline: 0;
+    box-shadow:none;
+}
+/* footer section */
+footer {
+    background-color: var(--bg-icons);
 }
