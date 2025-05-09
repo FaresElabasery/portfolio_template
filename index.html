@@ -228,7 +228,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="portfolio">
+        <section id="works" class="portfolio">
             <div class="heading mb-5">
                 <h2 class="text-center m-auto fs-1 fw-bolder">Portfolio.</h2>
             </div>
@@ -705,9 +705,102 @@
                 </div>
             </div>
         </section>
+        <section id="cliens" class="testimonials bg-color">
+            <div class="heading mb-5">
+                <h2 class="text-center m-auto fs-1 fw-bolder">Testimonials.</h2>
+            </div>
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide p-5 " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <div class="img-container m-auto">
+                                <img src="imgs/1_New1.jpg" alt="image 1" class="img-fluid rounded-circle">
+                            </div>
+                            <p class="my-3 text-secondary">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h6 class="fw-semibold">Alex Smith</h6>
+                            <span class="fw-bold text-secondary">Envato Customer</span>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="img-container m-auto">
+                                <img src="imgs/testi-2.jpg" alt="image 1" class="img-fluid rounded-circle">
+                            </div>
+                            <p class="my-3 text-secondary">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h6 class="fw-semibold">Alex Smith</h6>
+                            <span class="small-text fw-bold text-secondary">Envato Customer</span>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="img-container m-auto">
+                                <img src="imgs/testi-3.jpg" alt="image 1" class="img-fluid rounded-circle">
+                            </div>
+                            <p class="my-3 text-secondary">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h6 class="fw-semibold">Alex Smith</h6>
+                            <span class="small-text fw-bold text-secondary">Envato Customer</span>
+                        </div>
+
+                    </div>
+                    <div class="carousel-indicators position-static mt-4">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+        </section>
+        <section class="counting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter text-center ">
+                            <i class="fa-solid fa-users fa-2x"></i>
+                            <h2 class="counter-number fw-bolder pt-2"> <span data-purecounter-start="0"
+                                    data-purecounter-end="850" class="purecounter">0</span> </h2>
+                            <h6 class="text-secondary fw-bold small-text mt-3">Happy Customers</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter text-center ">
+                            <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                            <h2 class="counter-number fw-bolder pt-2"> <span data-purecounter-start="0"
+                                    data-purecounter-end="230" class="purecounter">0</span></h2>
+                            <h6 class="text-secondary fw-bold small-text mt-3">Complete Projects</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter text-center ">
+                            <i class="fa-solid fa-bullhorn fa-2x"></i>
+                            <h2 class="counter-number fw-bolder pt-2"> <span data-purecounter-start="0"
+                                    data-purecounter-end="9450" class="purecounter">0</span></h2>
+                            <h6 class="text-secondary fw-bold small-text mt-3">Lines Of Code</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter text-center ">
+                            <i class="fa-solid fa-users fa-2x"></i>
+                            <h2 class="counter-number fw-bolder pt-2"> <span data-purecounter-start="0"
+                                    data-purecounter-end="780" class="purecounter">0</span></h2>
+                            <h6 class="text-secondary fw-bold small-text mt-3">Files Downloaded </h6>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
-
+    <!-- counting library -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <!-- typing library -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -716,6 +809,8 @@
             typeSpeed: 50,
             loop: true,
         });
+        // counting library
+        new PureCounter();
     </script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>

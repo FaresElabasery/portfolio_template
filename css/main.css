@@ -2,6 +2,7 @@
     --section-bg-color: #F7F7F7;
     --font-color: #343434;
     --bg-icons: #1C1C1C;
+    scroll-padding: 2rem;
 }
 
 .container {
@@ -83,7 +84,7 @@ body {
 
 /* navbar */
 
-#portfolio .nav.nav-pills li button,
+#works .nav.nav-pills li button,
 nav .nav-item a {
     position: relative;
     width: fit-content;
@@ -92,7 +93,7 @@ nav .nav-item a {
     background-color: transparent !important;
 }
 
-#portfolio .nav.nav-pills li button::after,
+#works .nav.nav-pills li button::after,
 nav .nav-item a::after {
     padding: 0 0 0 0;
     position: absolute;
@@ -108,7 +109,7 @@ nav .nav-item a::after {
 
 nav .nav-item .active::after,
 nav .nav-item:hover a::after,
-#portfolio .nav.nav-pills li button.active::after {
+#works .nav.nav-pills li button.active::after {
     width: 100%;
 }
 
@@ -241,4 +242,22 @@ header li {
 
 #portfolio .nav.nav-pills li button::after {
     height: 3px;
+}
+
+/* testimonials section */
+.testimonials .img-container {
+    width: 85px;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(134, 151, 145);
+    
 }
