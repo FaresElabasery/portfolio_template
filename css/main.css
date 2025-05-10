@@ -42,19 +42,23 @@
     font-size: 40px;
     z-index: 999999;
 }
+
 @keyframes loader {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         display: none;
     }
 }
+
 @keyframes animationloader {
     0% {
         height: 50vh;
     }
+
     100% {
         height: 0;
     }
@@ -296,6 +300,26 @@ header li {
 #portfolio .nav.nav-pills li button::after {
     height: 3px;
 }
+
+.carousel-control-prev {
+    position: fixed;
+    left: -48%;
+    width: 100%;
+}
+
+.carousel-control-next {
+    position: fixed;
+    left: 47%;
+    width: 100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
 
 /* testimonials section */
 .testimonials .img-container {
